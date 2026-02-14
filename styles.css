@@ -1,0 +1,206 @@
+/* Gmail Notes Extension Styles */
+
+.gmail-notes-panel {
+  background: #fff;
+  border: 2px solid #4285f4;
+  border-radius: 8px;
+  margin: 16px 0;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+}
+
+.gmail-notes-header {
+  background: linear-gradient(135deg, #4285f4 0%, #5c9aff 100%);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gmail-notes-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.gmail-notes-collapse {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.gmail-notes-collapse:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.gmail-notes-content {
+  padding: 16px;
+}
+
+.gmail-notes-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.gmail-notes-textarea:focus {
+  outline: none;
+  border-color: #4285f4;
+  box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.1);
+}
+
+.gmail-notes-tags-input {
+  margin-top: 12px;
+}
+
+.gmail-notes-tag-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.gmail-notes-tag-input:focus {
+  outline: none;
+  border-color: #4285f4;
+  box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.1);
+}
+
+.gmail-notes-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.gmail-notes-save,
+.gmail-notes-cancel,
+.gmail-notes-delete,
+.gmail-notes-edit-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.gmail-notes-save {
+  background: #4285f4;
+  color: white;
+}
+
+.gmail-notes-save:hover {
+  background: #3367d6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.gmail-notes-cancel {
+  background: #f1f3f4;
+  color: #5f6368;
+}
+
+.gmail-notes-cancel:hover {
+  background: #e8eaed;
+}
+
+.gmail-notes-delete {
+  background: #ea4335;
+  color: white;
+}
+
+.gmail-notes-delete:hover {
+  background: #d33828;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.gmail-notes-edit-btn {
+  background: #4285f4;
+  color: white;
+  margin-top: 12px;
+}
+
+.gmail-notes-edit-btn:hover {
+  background: #3367d6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.gmail-notes-display {
+  animation: fadeIn 0.3s;
+}
+
+.gmail-notes-text {
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #202124;
+}
+
+.gmail-notes-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.gmail-note-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #e8f0fe;
+  color: #1967d2;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gmail-notes-panel {
+    margin: 8px 0;
+  }
+  
+  .gmail-notes-actions {
+    flex-direction: column;
+  }
+  
+  .gmail-notes-save,
+  .gmail-notes-cancel,
+  .gmail-notes-delete,
+  .gmail-notes-edit-btn {
+    width: 100%;
+  }
+}
