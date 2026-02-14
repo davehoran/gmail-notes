@@ -45,10 +45,10 @@ You now have a personal note-taking system for Gmail!
 A: No! Notes are private and stored only in your browser.
 
 **Q: Will my notes sync across devices?**  
-A: Yes, if you're logged into Chrome on multiple devices.
+A: The UI will not show up in mobile Gmail in Chrome or native app -- yet.
 
 **Q: How many notes can I save?**  
-A: Unlimited! (Limited only by your browser's storage)
+A: Unlimited! (Limited only by your browser's storage) -- working on external storage later
 
 **Q: Can I export my notes?**  
 A: Not yet, but you can add this feature by editing the code!
